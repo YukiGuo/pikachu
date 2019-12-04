@@ -47,14 +47,12 @@ margin-left: 90px;
     width: 12px;
     height: 12px;
     background-color: #000;
-    border-radius: 50px 0 0 0;
-    transform: translateX(-13px) translateY(10px) rotate(45deg);
-    transform-origin: bottom right;
     position: absolute;
-    top: 28px;
+    top: 30px;
     left: 50%;
-    margin-right:15px ;
-   
+    border-radius: 50px 0 0 0; 
+    transform-origin:bottom right;
+    transform:translateX(-12px) rotate(45deg);
 }
 .lip{
     position: absolute;
@@ -139,21 +137,24 @@ margin-left: 90px;
     }
     @keyframes wave{
         0%{
-            transform: rotate(45deg);
+         
+            transform:translateX(-12px)  rotate(45deg);
         }
         33%{
-            transform:  rotate(50deg);
+            
+            transform: translateX(-12px) rotate(50deg);
         }
         66%{
-            transform: rotate(45deg);
+            
+            transform: translateX(-12px) rotate(45deg);
         }
         100%{
-            transform:  rotate(40deg);
+          
+            transform:translateX(-12px) rotate(40deg);
         }
     }
-    .nose:hover{
-        transform-origin: center bottom;
+ .nose:hover{
         animation: wave 300ms infinite linear;
-      }    
+      }  
 `
 export default string

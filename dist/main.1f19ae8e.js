@@ -124,7 +124,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var string = "\n.skin{ \n    position: fixed;\n    top: 50vh;\n    left: 0;\n    background-color: #FEE433;\n    width:100%;\n    height: 50vh;\n}\n.face{\nmargin-left:auto;\nmargin-right: auto;\nmargin-top:50px;\npadding-left: 10px;\nposition: relative;\n}\n.eye{\nwidth: 50px;\nheight: 50px;\nborder:solid 2px ;\nborder-radius: 50%;\nposition: absolute;\nbackground-color: #2E2E2E;\n}\n.eye::after{\n    position: absolute;\n    top: 5px;\n    left:10px;\n    content: \"\";\n    display: block;\n    width: 20px;\n    height: 20px;\n    background-color: #fff;\n    border-radius: 50%;\n    border:solid 2px ;\n    \n}\n.eye.left{\nright: 50%;\nmargin-right: 90px;\n}\n.eye.right{\nleft: 50%;\nmargin-left: 90px;\n}\n.nose{\n    width: 12px;\n    height: 12px;\n    background-color: #000;\n    border-radius: 50px 0 0 0;\n    transform: translateX(-13px) translateY(10px) rotate(45deg);\n    transform-origin: bottom right;\n    position: absolute;\n    top: 28px;\n    left: 50%;\n    margin-right:15px ;\n   \n}\n.lip{\n    position: absolute;\n    width: 150px;\n    height: 110px;\n    position: absolute;\n    top: 65px;\n    left: 50%;\n    transform: translateX(-50%);\n    overflow: hidden;\n\n}\n.lip-up{\n    width: 80px;\n    height: 25px;\n    border: solid#000 2px;\n    position: absolute;\n    top: 10px;\n    z-index: 3;\n    background-color: #FEE433;\n\n}\n.lip-up.left{\n    right: 50%;\n    margin-left: 10px;\n    border-top:none ;\n    border-right:none ;\n    border-bottom-left-radius: 40px 25px;\n    transform: rotate(-20deg) translateX(7px);\n    transform-origin: left bottom;\n}\n.lip-up.right{\n    left: 50%;\n    border-top:none ;\n    border-left:none ;\n    border-bottom-right-radius: 40px 25px;\n    transform: rotate(20deg) translateX(-7px);\n    transform-origin: right bottom;\n}\n.mouth-down .tongue{\n    width: 300px;\n    height: 3500px;\n    background-color: #990513;\n    border:solid 1px #2E2E2E;\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    border-radius:200px/2000px;\n    overflow: hidden;\n}\n.mouth-down .tongue .tongue-shadow{\n    width:100px;\n    height: 90px;\n    background-color: #fc4a62;\n    border-radius: 50%;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    bottom: 0;\n}\n.cheek{\n    width: 70px;\n    height: 70px;\n    border:solid 2px ;\n    border-radius: 50%;\n    position: absolute;\n    top: 80px;\n    background-color: #FC0D1C;\n    border:solid 2px black;\n}\n.cheek.left{\n    right: 50%;\n    /* background-color: red; */\n    margin-right: 120px;\n    \n    }\n.cheek.right{\n    left: 50%;\n    /* background-color:blue; */\n    margin-left: 120px;\n    }\n    @keyframes wave{\n        0%{\n            transform: rotate(45deg);\n        }\n        33%{\n            transform:  rotate(50deg);\n        }\n        66%{\n            transform: rotate(45deg);\n        }\n        100%{\n            transform:  rotate(40deg);\n        }\n    }\n    .nose:hover{\n        transform-origin: center bottom;\n        animation: wave 300ms infinite linear;\n      }    \n";
+var string = "\n.skin{ \n    position: fixed;\n    top: 50vh;\n    left: 0;\n    background-color: #FEE433;\n    width:100%;\n    height: 50vh;\n}\n.face{\nmargin-left:auto;\nmargin-right: auto;\nmargin-top:50px;\npadding-left: 10px;\nposition: relative;\n}\n.eye{\nwidth: 50px;\nheight: 50px;\nborder:solid 2px ;\nborder-radius: 50%;\nposition: absolute;\nbackground-color: #2E2E2E;\n}\n.eye::after{\n    position: absolute;\n    top: 5px;\n    left:10px;\n    content: \"\";\n    display: block;\n    width: 20px;\n    height: 20px;\n    background-color: #fff;\n    border-radius: 50%;\n    border:solid 2px ;\n    \n}\n.eye.left{\nright: 50%;\nmargin-right: 90px;\n}\n.eye.right{\nleft: 50%;\nmargin-left: 90px;\n}\n.nose{\n    width: 12px;\n    height: 12px;\n    background-color: #000;\n    position: absolute;\n    top: 30px;\n    left: 50%;\n    border-radius: 50px 0 0 0; \n    transform-origin:bottom right;\n    transform:translateX(-12px) rotate(45deg);\n}\n.lip{\n    position: absolute;\n    width: 150px;\n    height: 110px;\n    position: absolute;\n    top: 65px;\n    left: 50%;\n    transform: translateX(-50%);\n    overflow: hidden;\n\n}\n.lip-up{\n    width: 80px;\n    height: 25px;\n    border: solid#000 2px;\n    position: absolute;\n    top: 10px;\n    z-index: 3;\n    background-color: #FEE433;\n\n}\n.lip-up.left{\n    right: 50%;\n    margin-left: 10px;\n    border-top:none ;\n    border-right:none ;\n    border-bottom-left-radius: 40px 25px;\n    transform: rotate(-20deg) translateX(7px);\n    transform-origin: left bottom;\n}\n.lip-up.right{\n    left: 50%;\n    border-top:none ;\n    border-left:none ;\n    border-bottom-right-radius: 40px 25px;\n    transform: rotate(20deg) translateX(-7px);\n    transform-origin: right bottom;\n}\n.mouth-down .tongue{\n    width: 300px;\n    height: 3500px;\n    background-color: #990513;\n    border:solid 1px #2E2E2E;\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    border-radius:200px/2000px;\n    overflow: hidden;\n}\n.mouth-down .tongue .tongue-shadow{\n    width:100px;\n    height: 90px;\n    background-color: #fc4a62;\n    border-radius: 50%;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    bottom: 0;\n}\n.cheek{\n    width: 70px;\n    height: 70px;\n    border:solid 2px ;\n    border-radius: 50%;\n    position: absolute;\n    top: 80px;\n    background-color: #FC0D1C;\n    border:solid 2px black;\n}\n.cheek.left{\n    right: 50%;\n    /* background-color: red; */\n    margin-right: 120px;\n    \n    }\n.cheek.right{\n    left: 50%;\n    /* background-color:blue; */\n    margin-left: 120px;\n    }\n    @keyframes wave{\n        0%{\n         \n            transform:translateX(-12px)  rotate(45deg);\n        }\n        33%{\n            \n            transform: translateX(-12px) rotate(50deg);\n        }\n        66%{\n            \n            transform: translateX(-12px) rotate(45deg);\n        }\n        100%{\n          \n            transform:translateX(-12px) rotate(40deg);\n        }\n    }\n .nose:hover{\n        animation: wave 300ms infinite linear;\n      }  \n";
 var _default = string;
 exports.default = _default;
 },{}],"main.js":[function(require,module,exports) {
@@ -134,54 +134,98 @@ var _style = _interopRequireDefault(require("./style.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var length = _style.default.length;
-var runTime = 100;
-var n = 0;
+//用对象封装
+var player = {
+  n: 0,
+  runTime: 100,
+  id: undefined,
+  init: function init() {
+    player.play();
+    player.bindEvents();
+  },
+  events: {
+    "#btnPause": "pause",
+    "#btnPlay": "play",
+    "#fastPlay": "fast",
+    "#slowPlay": "slow"
+  },
+  bindEvents: function bindEvents() {
+    console.log("BDL");
 
-var play = function play() {
-  return setInterval(run, runTime);
-};
+    for (var key in player.events) {
+      //有可能遍历到继承的属性，防御性编程
+      if (player.events.hasOwnProperty(key)) {
+        var value = player.events[key];
+        document.querySelector(key).onclick = player[value];
+      }
+    } //将以下代码封装
+    // document.querySelector("#btnPause").onclick = player.pause
+    // document.querySelector("#btnPlay").onclick = player.play
+    // document.querySelector("#fastPlay").onclick = player.fast
+    // document.querySelector("#slowPlay").onclick = player.slow
 
-var pause = function pause() {
-  window.clearInterval(id);
-};
+  },
+  play: function play() {
+    console.log(player.runTime);
+    player.id = setInterval(player.run, player.runTime);
+  },
+  pause: function pause() {
+    window.clearInterval(player.id);
+  },
+  run: function run() {
+    if (player.n < _style.default.length) {
+      player.n += 1;
 
-var run = function run() {
-  if (n < length) {
-    n += 1;
+      var content = _style.default.substring(0, player.n);
 
-    var content = _style.default.substring(0, n);
-
-    codeStyle.innerHTML = content;
-    codeHtml.innerText = content;
-    codeHtml.scrollTop = 999999;
-  } else {
-    clearInterval(id);
-    return;
+      codeStyle.innerHTML = content;
+      codeHtml.innerText = content;
+      codeHtml.scrollTop = 999999;
+    } else {
+      clearInterval(player.id);
+      return;
+    }
+  },
+  slow: function slow() {
+    player.runTime = 200;
+    player.pause();
+    player.play();
+  },
+  fast: function fast() {
+    player.runTime = 0;
+    player.pause();
+    player.play();
   }
 };
-
-var id = play();
-
-btnPause.onclick = function () {
-  pause();
-};
-
-btnPlay.onclick = function () {
-  id = play();
-};
-
-fastPlay.onclick = function () {
-  runTime = 0;
-  pause();
-  id = play();
-};
-
-slowPlay.onclick = function () {
-  runTime = 200;
-  pause();
-  id = play();
-};
+player.init(); //原来的代码
+// let play = () => {
+//     return setInterval(run, runTime);
+// }
+// let pause = () => {
+//     window.clearInterval(id)
+// }
+// let slow = () => {
+//     runTime = 200
+//     pause()
+//     id = play()
+// }
+// let fast = () => {
+//     runTime = 0
+//     pause()
+//     id = play()
+// }
+// let run = () => {
+//     if (n < length) {
+//         n += 1
+//         let content = string.substring(0, n)
+//         codeStyle.innerHTML = content
+//         codeHtml.innerText = content
+//         codeHtml.scrollTop = 999999
+//     } else {
+//         clearInterval(id)
+//         return
+//     }
+// }
 },{"./style.js":"style.js"}],"../../../software/nodejs/node_cache/_npx/17432/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
