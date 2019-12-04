@@ -1,23 +1,18 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-*::after{
-    box-sizing: border-box
-}
-
-.skin{
-    background-color:  #FEE433;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+const string = `
+.skin{ 
+    position: fixed;
+    top: 50vh;
+    left: 0;
+    background-color: #FEE433;
+    width:100%;
+    height: 50vh;
 }
 .face{
-position: relative;
 margin-left:auto;
 margin-right: auto;
-padding-left: 10px;;
+margin-top:50px;
+padding-left: 10px;
+position: relative;
 }
 .eye{
 width: 50px;
@@ -42,28 +37,27 @@ background-color: #2E2E2E;
 }
 .eye.left{
 right: 50%;
-/* background-color: red; */
 margin-right: 90px;
-
 }
 .eye.right{
 left: 50%;
-/* background-color:blue; */
 margin-left: 90px;
 }
 .nose{
-    position: absolute;
-    top: 28px;
-    left: 50%;
-    margin-right:15px ;
     width: 12px;
     height: 12px;
     background-color: #000;
     border-radius: 50px 0 0 0;
-    transform: rotate(45deg) translateY(8px);
+    transform: translateX(-13px) translateY(10px) rotate(45deg);
+    transform-origin: bottom right;
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    margin-right:15px ;
+   
 }
 .lip{
-    position: relative;
+    position: absolute;
     width: 150px;
     height: 110px;
     position: absolute;
@@ -104,6 +98,7 @@ margin-left: 90px;
     width: 300px;
     height: 3500px;
     background-color: #990513;
+    border:solid 1px #2E2E2E;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -142,3 +137,23 @@ margin-left: 90px;
     /* background-color:blue; */
     margin-left: 120px;
     }
+    @keyframes wave{
+        0%{
+            transform: rotate(45deg);
+        }
+        33%{
+            transform:  rotate(50deg);
+        }
+        66%{
+            transform: rotate(45deg);
+        }
+        100%{
+            transform:  rotate(40deg);
+        }
+    }
+    .nose:hover{
+        transform-origin: center bottom;
+        animation: wave 300ms infinite linear;
+      }    
+`
+export default string
