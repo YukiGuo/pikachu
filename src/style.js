@@ -33,7 +33,6 @@ background-color: #2E2E2E;
     background-color: #fff;
     border-radius: 50%;
     border:solid 2px ;
-    
 }
 .eye.left{
 right: 50%;
@@ -63,7 +62,6 @@ margin-left: 90px;
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
-
 }
 .lip-up{
     width: 80px;
@@ -73,7 +71,6 @@ margin-left: 90px;
     top: 10px;
     z-index: 3;
     background-color: #FEE433;
-
 }
 .lip-up.left{
     right: 50%;
@@ -134,27 +131,6 @@ margin-left: 90px;
     left: 50%;
     /* background-color:blue; */
     margin-left: 120px;
-    }
-    @keyframes wave{
-        0%{
-         
-            transform:translateX(-12px)  rotate(45deg);
-        }
-        33%{
-            
-            transform: translateX(-12px) rotate(50deg);
-        }
-        66%{
-            
-            transform: translateX(-12px) rotate(45deg);
-        }
-        100%{
-          
-            transform:translateX(-12px) rotate(40deg);
-        }
-    }
- .nose:hover{
-        animation: wave 300ms infinite linear;
-      }  
+    } 
 `
 export default string

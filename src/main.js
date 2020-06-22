@@ -1,5 +1,7 @@
 import string from './style.js'
 //用对象封装
+const  codeStyle=document.querySelector('#codeStyle');
+const   codeHtml=document.querySelector('#codeHtml');
 const player = {
     n: 0,
     runTime: 100,
@@ -15,7 +17,6 @@ const player = {
         "#slowPlay": "slow",
     },
     bindEvents: () => {
-        console.log("BDL")
         for (let key in player.events) {
             //有可能遍历到继承的属性，防御性编程
             if (player.events.hasOwnProperty(key)) {
@@ -30,7 +31,6 @@ const player = {
         // document.querySelector("#slowPlay").onclick = player.slow
     },
     play: () => {
-        console.log(player.runTime)
         player.id = setInterval(player.run, player.runTime);
     },
     pause: () => {
@@ -60,33 +60,3 @@ const player = {
     }
 }
 player.init()
-//原来的代码
-// let play = () => {
-//     return setInterval(run, runTime);
-// }
-// let pause = () => {
-//     window.clearInterval(id)
-// }
-// let slow = () => {
-//     runTime = 200
-//     pause()
-//     id = play()
-// }
-// let fast = () => {
-//     runTime = 0
-//     pause()
-//     id = play()
-// }
-
-// let run = () => {
-//     if (n < length) {
-//         n += 1
-//         let content = string.substring(0, n)
-//         codeStyle.innerHTML = content
-//         codeHtml.innerText = content
-//         codeHtml.scrollTop = 999999
-//     } else {
-//         clearInterval(id)
-//         return
-//     }
-// }

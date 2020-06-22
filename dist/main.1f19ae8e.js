@@ -124,7 +124,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var string = "\n.skin{ \n    position: fixed;\n    top: 50vh;\n    left: 0;\n    background-color: #FEE433;\n    width:100%;\n    height: 50vh;\n}\n.face{\nmargin-left:auto;\nmargin-right: auto;\nmargin-top:50px;\npadding-left: 10px;\nposition: relative;\n}\n.eye{\nwidth: 50px;\nheight: 50px;\nborder:solid 2px ;\nborder-radius: 50%;\nposition: absolute;\nbackground-color: #2E2E2E;\n}\n.eye::after{\n    position: absolute;\n    top: 5px;\n    left:10px;\n    content: \"\";\n    display: block;\n    width: 20px;\n    height: 20px;\n    background-color: #fff;\n    border-radius: 50%;\n    border:solid 2px ;\n    \n}\n.eye.left{\nright: 50%;\nmargin-right: 90px;\n}\n.eye.right{\nleft: 50%;\nmargin-left: 90px;\n}\n.nose{\n    width: 18px;\n    height: 18px;\n    background-color: #000;\n    position: absolute;\n    top: 30px;\n    left: 50%;\n    border-radius: 50px 0 0 0; \n    transform-origin:bottom right;\n    transform:translateX(-18px) rotate(45deg);\n}\n.lip{\n    position: absolute;\n    width: 150px;\n    height: 110px;\n    position: absolute;\n    top: 65px;\n    left: 50%;\n    transform: translateX(-50%);\n    overflow: hidden;\n\n}\n.lip-up{\n    width: 80px;\n    height: 25px;\n    border: solid#000 2px;\n    position: absolute;\n    top: 10px;\n    z-index: 3;\n    background-color: #FEE433;\n\n}\n.lip-up.left{\n    right: 50%;\n    margin-left: 10px;\n    border-top:none ;\n    border-right:none ;\n    border-bottom-left-radius: 40px 25px;\n    transform: rotate(-20deg) translateX(7px);\n    transform-origin: left bottom;\n}\n.lip-up.right{\n    left: 50%;\n    border-top:none ;\n    border-left:none ;\n    border-bottom-right-radius: 40px 25px;\n    transform: rotate(20deg) translateX(-7px);\n    transform-origin: right bottom;\n}\n.mouth-down .tongue{\n    width: 300px;\n    height: 3500px;\n    background-color: #990513;\n    border:solid 1px #2E2E2E;\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    border-radius:200px/2000px;\n    overflow: hidden;\n}\n.mouth-down .tongue .tongue-shadow{\n    width:100px;\n    height: 90px;\n    background-color: #fc4a62;\n    border-radius: 50%;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    bottom: 0;\n}\n.cheek{\n    width: 70px;\n    height: 70px;\n    border:solid 2px ;\n    border-radius: 50%;\n    position: absolute;\n    top: 80px;\n    background-color: #FC0D1C;\n    border:solid 2px black;\n}\n.cheek.left{\n    right: 50%;\n    /* background-color: red; */\n    margin-right: 120px;\n    \n    }\n.cheek.right{\n    left: 50%;\n    /* background-color:blue; */\n    margin-left: 120px;\n    }\n    @keyframes wave{\n        0%{\n         \n            transform:translateX(-12px)  rotate(45deg);\n        }\n        33%{\n            \n            transform: translateX(-12px) rotate(50deg);\n        }\n        66%{\n            \n            transform: translateX(-12px) rotate(45deg);\n        }\n        100%{\n          \n            transform:translateX(-12px) rotate(40deg);\n        }\n    }\n .nose:hover{\n        animation: wave 300ms infinite linear;\n      }  \n";
+var string = "\n.skin{ \n    position: fixed;\n    top: 50vh;\n    left: 0;\n    background-color: #FEE433;\n    width:100%;\n    height: 50vh;\n}\n.face{\nmargin-left:auto;\nmargin-right: auto;\nmargin-top:50px;\npadding-left: 10px;\nposition: relative;\n}\n.eye{\nwidth: 50px;\nheight: 50px;\nborder:solid 2px ;\nborder-radius: 50%;\nposition: absolute;\nbackground-color: #2E2E2E;\n}\n.eye::after{\n    position: absolute;\n    top: 5px;\n    left:10px;\n    content: \"\";\n    display: block;\n    width: 20px;\n    height: 20px;\n    background-color: #fff;\n    border-radius: 50%;\n    border:solid 2px ;\n}\n.eye.left{\nright: 50%;\nmargin-right: 90px;\n}\n.eye.right{\nleft: 50%;\nmargin-left: 90px;\n}\n.nose{\n    width: 18px;\n    height: 18px;\n    background-color: #000;\n    position: absolute;\n    top: 30px;\n    left: 50%;\n    border-radius: 50px 0 0 0; \n    transform-origin:bottom right;\n    transform:translateX(-18px) rotate(45deg);\n}\n.lip{\n    position: absolute;\n    width: 150px;\n    height: 110px;\n    position: absolute;\n    top: 65px;\n    left: 50%;\n    transform: translateX(-50%);\n    overflow: hidden;\n}\n.lip-up{\n    width: 80px;\n    height: 25px;\n    border: solid#000 2px;\n    position: absolute;\n    top: 10px;\n    z-index: 3;\n    background-color: #FEE433;\n}\n.lip-up.left{\n    right: 50%;\n    margin-left: 10px;\n    border-top:none ;\n    border-right:none ;\n    border-bottom-left-radius: 40px 25px;\n    transform: rotate(-20deg) translateX(7px);\n    transform-origin: left bottom;\n}\n.lip-up.right{\n    left: 50%;\n    border-top:none ;\n    border-left:none ;\n    border-bottom-right-radius: 40px 25px;\n    transform: rotate(20deg) translateX(-7px);\n    transform-origin: right bottom;\n}\n.mouth-down .tongue{\n    width: 300px;\n    height: 3500px;\n    background-color: #990513;\n    border:solid 1px #2E2E2E;\n    position: absolute;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    border-radius:200px/2000px;\n    overflow: hidden;\n}\n.mouth-down .tongue .tongue-shadow{\n    width:100px;\n    height: 90px;\n    background-color: #fc4a62;\n    border-radius: 50%;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    bottom: 0;\n}\n.cheek{\n    width: 70px;\n    height: 70px;\n    border:solid 2px ;\n    border-radius: 50%;\n    position: absolute;\n    top: 80px;\n    background-color: #FC0D1C;\n    border:solid 2px black;\n}\n.cheek.left{\n    right: 50%;\n    /* background-color: red; */\n    margin-right: 120px;\n    \n    }\n.cheek.right{\n    left: 50%;\n    /* background-color:blue; */\n    margin-left: 120px;\n    } \n";
 var _default = string;
 exports.default = _default;
 },{}],"main.js":[function(require,module,exports) {
@@ -135,6 +135,8 @@ var _style = _interopRequireDefault(require("./style.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //用对象封装
+var codeStyle = document.querySelector('#codeStyle');
+var codeHtml = document.querySelector('#codeHtml');
 var player = {
   n: 0,
   runTime: 100,
@@ -150,8 +152,6 @@ var player = {
     "#slowPlay": "slow"
   },
   bindEvents: function bindEvents() {
-    console.log("BDL");
-
     for (var key in player.events) {
       //有可能遍历到继承的属性，防御性编程
       if (player.events.hasOwnProperty(key)) {
@@ -166,7 +166,6 @@ var player = {
 
   },
   play: function play() {
-    console.log(player.runTime);
     player.id = setInterval(player.run, player.runTime);
   },
   pause: function pause() {
@@ -197,35 +196,7 @@ var player = {
     player.play();
   }
 };
-player.init(); //原来的代码
-// let play = () => {
-//     return setInterval(run, runTime);
-// }
-// let pause = () => {
-//     window.clearInterval(id)
-// }
-// let slow = () => {
-//     runTime = 200
-//     pause()
-//     id = play()
-// }
-// let fast = () => {
-//     runTime = 0
-//     pause()
-//     id = play()
-// }
-// let run = () => {
-//     if (n < length) {
-//         n += 1
-//         let content = string.substring(0, n)
-//         codeStyle.innerHTML = content
-//         codeHtml.innerText = content
-//         codeHtml.scrollTop = 999999
-//     } else {
-//         clearInterval(id)
-//         return
-//     }
-// }
+player.init();
 },{"./style.js":"style.js"}],"../../../software/nodejs/node_cache/_npx/6592/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
