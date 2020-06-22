@@ -5,7 +5,6 @@ const player = {
     runTime: 100,
     id: undefined,
     init: () => {
-
         player.play()
         player.bindEvents()
     },
