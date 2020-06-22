@@ -44,15 +44,15 @@ left: 50%;
 margin-left: 90px;
 }
 .nose{
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
     background-color: #000;
     position: absolute;
     top: 30px;
     left: 50%;
     border-radius: 50px 0 0 0; 
     transform-origin:bottom right;
-    transform:translateX(-12px) rotate(45deg);
+    transform:translateX(-18px) rotate(45deg);
 }
 .lip{
     position: absolute;

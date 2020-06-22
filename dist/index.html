@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>皮卡丘</title>
+    <title>画个皮卡丘</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>* {
             padding: 0;
@@ -15,6 +15,9 @@
 
         *::after {
             box-sizing: border-box
+        }
+        .wrapper{
+            padding: 4px;
         }
 
         #codeStyle {
@@ -29,15 +32,16 @@
             height: 50vh;
             overflow-x: hidden;
             overflow-y: auto;
-            background-color: #ccc;
-            padding: 15px;
+            font-size:12px;
+            margin-top: 30px;
+            padding: 8px;
 
         }
 
         #codeHtml::-webkit-scrollbar {
             display: none;
         }
-
+        h4{text-align: center}
         .buttonList {
             position: fixed;
             top: 20px;
@@ -49,16 +53,18 @@
         }
 
         .buttonList button {
-            width: 50px;
-            height: 20px;
             margin-top: 10px;
             background-color: #fff;
             border: none;
+            padding: 2px 4px;
+            border:solid #ccc 1px;
         }</style>
 </head>
 
 <body>
+<div class="wrapper">
     <style id="codeStyle"></style>
+    <h4>来一起画个皮卡丘吧！</h4>
     <div id="codeHtml"></div>
     <div class="skin">
         <div class="face">
@@ -87,8 +93,8 @@
         <button id="slowPlay">慢速</button>
     </div>
 
-
-    <script src="/main.1f19ae8e.js"></script>
+</div>
+    <script type="module" src="/main.1f19ae8e.js"></script>
 </body>
 
 </html>
